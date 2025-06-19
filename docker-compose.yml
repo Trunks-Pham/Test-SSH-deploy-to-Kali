@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  go-crud:
+    image: phamminhthao/go-crud:latest
+    container_name: go-crud
+    restart: unless-stopped
+    ports:
+      - "8080:3000"
+    env_file:
+      - .env
+    networks:
+      - go-crud-network
+
+networks:
+  go-crud-network:
+    driver: bridge

@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    IMAGE_NAME = 'gocrud/go-crud:latest'
+    IMAGE_NAME = 'phamminhthao/go-crud:latest'
     REMOTE = 'kali@192.168.1.39'
   }
 
